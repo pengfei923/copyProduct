@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Choose_TopView">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prq-Xk-3yX">
+                    <rect key="frame" x="0.0" y="0.0" width="297" height="32"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNY-DW-bXC">
+                            <rect key="frame" x="0.0" y="0.0" width="99" height="32"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="工资" image="sort-icon">
+                                <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVg-3p-Wzi">
+                            <rect key="frame" x="198" y="0.0" width="99" height="32"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="KDA" image="sort-icon">
+                                <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFa-bE-98R">
+                            <rect key="frame" x="99" y="0.0" width="99" height="32"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="平均分" image="sort-icon">
+                                <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="yVg-3p-Wzi" firstAttribute="leading" secondItem="yFa-bE-98R" secondAttribute="trailing" id="4md-xZ-v5D"/>
+                        <constraint firstItem="yFa-bE-98R" firstAttribute="height" secondItem="TNY-DW-bXC" secondAttribute="height" id="GYv-qT-bPP"/>
+                        <constraint firstItem="yVg-3p-Wzi" firstAttribute="width" secondItem="TNY-DW-bXC" secondAttribute="width" id="Kkm-8j-wnh"/>
+                        <constraint firstAttribute="bottom" secondItem="yFa-bE-98R" secondAttribute="bottom" id="LRI-zO-Qhw"/>
+                        <constraint firstItem="yFa-bE-98R" firstAttribute="top" secondItem="prq-Xk-3yX" secondAttribute="top" id="SfN-UW-osi"/>
+                        <constraint firstItem="yFa-bE-98R" firstAttribute="leading" secondItem="TNY-DW-bXC" secondAttribute="trailing" id="UIX-GN-MJX"/>
+                        <constraint firstAttribute="trailing" secondItem="yVg-3p-Wzi" secondAttribute="trailing" id="Xug-gK-h1U"/>
+                        <constraint firstItem="yVg-3p-Wzi" firstAttribute="height" secondItem="TNY-DW-bXC" secondAttribute="height" id="aef-rE-zTN"/>
+                        <constraint firstItem="TNY-DW-bXC" firstAttribute="leading" secondItem="prq-Xk-3yX" secondAttribute="leading" id="eBi-5M-3xc"/>
+                        <constraint firstAttribute="bottom" secondItem="TNY-DW-bXC" secondAttribute="bottom" id="gjK-Oj-fEB"/>
+                        <constraint firstAttribute="bottom" secondItem="yVg-3p-Wzi" secondAttribute="bottom" id="pHG-kq-qVe"/>
+                        <constraint firstItem="yVg-3p-Wzi" firstAttribute="top" secondItem="prq-Xk-3yX" secondAttribute="top" id="vbw-gj-j0n"/>
+                        <constraint firstItem="TNY-DW-bXC" firstAttribute="top" secondItem="prq-Xk-3yX" secondAttribute="top" id="vkt-Ld-Yo6"/>
+                        <constraint firstItem="yFa-bE-98R" firstAttribute="width" secondItem="TNY-DW-bXC" secondAttribute="width" id="xK6-Pr-Zb2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="prq-Xk-3yX" secondAttribute="trailing" id="P8O-RE-Bai"/>
+                <constraint firstAttribute="bottom" secondItem="prq-Xk-3yX" secondAttribute="bottom" id="WBV-dR-UB8"/>
+                <constraint firstItem="prq-Xk-3yX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ieP-Vr-f3p"/>
+                <constraint firstItem="prq-Xk-3yX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tqW-xJ-qmZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="topButton1" destination="TNY-DW-bXC" id="g80-Rc-aKP"/>
+                <outlet property="topButton2" destination="yFa-bE-98R" id="fxw-pK-Eaj"/>
+                <outlet property="topButton3" destination="yVg-3p-Wzi" id="d9w-Wl-dd0"/>
+            </connections>
+            <point key="canvasLocation" x="-222" y="-70"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sort-icon" width="7" height="11"/>
+    </resources>
+</document>

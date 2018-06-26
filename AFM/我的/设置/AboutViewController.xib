@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController">
+            <connections>
+                <outlet property="banben_lab" destination="7Im-P5-SVu" id="jkb-hT-EGM"/>
+                <outlet property="title_Lab" destination="GFu-fM-7nI" id="OyH-bP-CwI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cIV-JF-FQg">
+                    <rect key="frame" x="142.5" y="30" width="90" height="122"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="122" id="ENk-7b-koH"/>
+                        <constraint firstAttribute="width" constant="90" id="nz7-xs-bKS"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="       爱伐木是以电子竞技和传统体育为主题，基于真实比赛的全民体育互动平台。玩家可以通过爱伐木挑选自己喜爱的选手，组建心中梦幻阵容，与数万玩家同场PK。所有选手数据与现实比赛同步，最纯正的范特西，最真实的互动。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFu-fM-7nI">
+                    <rect key="frame" x="28" y="185" width="325" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="WhF-Di-nXC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-weixin" translatesAutoresizingMaskIntoConstraints="NO" id="A99-n5-UQE">
+                    <rect key="frame" x="112.5" y="328" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="IBD-za-u30"/>
+                        <constraint firstAttribute="height" constant="150" id="tkQ-Co-JyP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注“AIFAMU爱伐木”公众号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AN-4l-6qS">
+                    <rect key="frame" x="110.5" y="478" width="154" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Uwz-Nj-9aB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客服QQ:2764920057" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSa-Qm-Mwv">
+                    <rect key="frame" x="127" y="612" width="121" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="byG-Jn-hlH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version  1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Im-P5-SVu">
+                    <rect key="frame" x="149.5" y="154" width="76" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="fRf-L0-a4I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright  2017 aifamu.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bit-hD-eCw">
+                    <rect key="frame" x="108" y="631" width="159" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="n8q-sN-cl2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bit-hD-eCw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2aF-Qi-Eg6"/>
+                <constraint firstItem="7Im-P5-SVu" firstAttribute="centerX" secondItem="cIV-JF-FQg" secondAttribute="centerX" id="3kr-Dx-9Uh"/>
+                <constraint firstItem="9AN-4l-6qS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5Uh-Mt-X0N"/>
+                <constraint firstItem="lSa-Qm-Mwv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8Xd-yc-yMu"/>
+                <constraint firstAttribute="trailing" secondItem="GFu-fM-7nI" secondAttribute="trailing" constant="22" id="I3M-eK-Wsr"/>
+                <constraint firstItem="GFu-fM-7nI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="PB6-z3-Hwd"/>
+                <constraint firstItem="cIV-JF-FQg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="R5i-g3-YK6"/>
+                <constraint firstItem="GFu-fM-7nI" firstAttribute="top" secondItem="7Im-P5-SVu" secondAttribute="bottom" constant="10" id="SZU-6i-mdk"/>
+                <constraint firstItem="A99-n5-UQE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fzf-hm-ddc"/>
+                <constraint firstAttribute="bottom" secondItem="bit-hD-eCw" secondAttribute="bottom" constant="15" id="hS3-hZ-n06"/>
+                <constraint firstItem="7Im-P5-SVu" firstAttribute="top" secondItem="cIV-JF-FQg" secondAttribute="bottom" constant="2" id="jWp-X1-Vdq"/>
+                <constraint firstItem="A99-n5-UQE" firstAttribute="top" secondItem="GFu-fM-7nI" secondAttribute="bottom" constant="23" id="lXJ-zT-f14"/>
+                <constraint firstItem="cIV-JF-FQg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="mTq-iG-i4n"/>
+                <constraint firstItem="9AN-4l-6qS" firstAttribute="top" secondItem="A99-n5-UQE" secondAttribute="bottom" id="oad-LK-Arx"/>
+                <constraint firstItem="bit-hD-eCw" firstAttribute="top" secondItem="lSa-Qm-Mwv" secondAttribute="bottom" id="vpn-c8-P1D"/>
+            </constraints>
+            <point key="canvasLocation" x="-30" y="29"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="90" height="122"/>
+        <image name="logo-weixin" width="172" height="172"/>
+    </resources>
+</document>

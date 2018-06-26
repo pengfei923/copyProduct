@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="Player_TopTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FF-ba-hCI" userLabel="1View">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="43.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJE-SA-Dog">
+                                <rect key="frame" x="20" y="0.0" width="120" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="相关消息">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <state key="selected" title="相关消息">
+                                    <color key="titleColor" red="0.84313725490000002" green="0.21960784310000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Meg_BtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ajH-d9-JU2"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1B-X9-GZl" userLabel="lineView">
+                                <rect key="frame" x="47.5" y="40" width="65" height="3"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.21960784310000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="sNv-W6-yys"/>
+                                    <constraint firstAttribute="height" constant="3" id="tgw-4T-gf6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.8005371094" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XJE-SA-Dog" secondAttribute="bottom" id="3Zn-Q5-tVM"/>
+                            <constraint firstAttribute="trailing" secondItem="XJE-SA-Dog" secondAttribute="trailing" constant="20" id="637-sy-abe"/>
+                            <constraint firstItem="XJE-SA-Dog" firstAttribute="leading" secondItem="3FF-ba-hCI" secondAttribute="leading" constant="20" id="8Py-ut-iSs"/>
+                            <constraint firstAttribute="bottom" secondItem="h1B-X9-GZl" secondAttribute="bottom" id="L08-nZ-gPq"/>
+                            <constraint firstItem="h1B-X9-GZl" firstAttribute="centerX" secondItem="XJE-SA-Dog" secondAttribute="centerX" id="lwy-Uw-BWb"/>
+                            <constraint firstItem="XJE-SA-Dog" firstAttribute="top" secondItem="3FF-ba-hCI" secondAttribute="top" id="uM1-w1-52O"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDb-Sw-m4R" userLabel="2View">
+                        <rect key="frame" x="160" y="0.0" width="160" height="43.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0L-Wj-5C5">
+                                <rect key="frame" x="20" y="0.0" width="120" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="比赛日志">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.84313725490000002" green="0.21960784310000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Rizhi_BtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8at-U3-p7F"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6a-m5-RYy" userLabel="lineView">
+                                <rect key="frame" x="47.5" y="40" width="65" height="3"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.21960784310000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="TCf-kK-6nr"/>
+                                    <constraint firstAttribute="width" constant="65" id="hpV-Oj-l6S"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.8005371094" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B6a-m5-RYy" firstAttribute="centerX" secondItem="K0L-Wj-5C5" secondAttribute="centerX" id="2CK-4V-aTF"/>
+                            <constraint firstItem="K0L-Wj-5C5" firstAttribute="leading" secondItem="LDb-Sw-m4R" secondAttribute="leading" constant="20" id="6ua-en-9xw"/>
+                            <constraint firstAttribute="bottom" secondItem="K0L-Wj-5C5" secondAttribute="bottom" constant="0.5" id="76R-PZ-2Zy"/>
+                            <constraint firstItem="K0L-Wj-5C5" firstAttribute="top" secondItem="LDb-Sw-m4R" secondAttribute="top" id="JDg-2r-JU6"/>
+                            <constraint firstAttribute="bottom" secondItem="B6a-m5-RYy" secondAttribute="bottom" id="Lwy-kf-jyG"/>
+                            <constraint firstAttribute="trailing" secondItem="K0L-Wj-5C5" secondAttribute="trailing" constant="20" id="ZMh-jz-rRc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="LDb-Sw-m4R" secondAttribute="bottom" id="Ar1-RJ-o3v"/>
+                    <constraint firstItem="LDb-Sw-m4R" firstAttribute="leading" secondItem="3FF-ba-hCI" secondAttribute="trailing" id="Tk6-rZ-dYa"/>
+                    <constraint firstItem="LDb-Sw-m4R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dEc-qf-UTY"/>
+                    <constraint firstItem="LDb-Sw-m4R" firstAttribute="width" secondItem="3FF-ba-hCI" secondAttribute="width" id="ecH-Sw-aG3"/>
+                    <constraint firstItem="3FF-ba-hCI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kB7-Zw-kBT"/>
+                    <constraint firstAttribute="trailing" secondItem="LDb-Sw-m4R" secondAttribute="trailing" id="oqu-pF-KtM"/>
+                    <constraint firstAttribute="bottom" secondItem="3FF-ba-hCI" secondAttribute="bottom" id="uX0-Ty-BQs"/>
+                    <constraint firstItem="3FF-ba-hCI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vqK-Rx-aLD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="Meg_Btn" destination="XJE-SA-Dog" id="5pB-bZ-CAe"/>
+                <outlet property="Meg_LineView" destination="h1B-X9-GZl" id="tSb-8r-56o"/>
+                <outlet property="Rizhi_Btn" destination="K0L-Wj-5C5" id="iyf-Ad-2fh"/>
+                <outlet property="Rizhi_LineVoew" destination="B6a-m5-RYy" id="ynr-M8-fWW"/>
+            </connections>
+            <point key="canvasLocation" x="-206" y="-134"/>
+        </tableViewCell>
+    </objects>
+</document>
